@@ -19,8 +19,8 @@ class Main:
 	def setup(self):
 		tmx_map = load_pygame('../data/map.tmx')
 		for x,y,surf in tmx_map.get_layer_by_name('Level').tiles():
-			Tile((x * 0,y * 0), surf, self.all_sprites)
-		Player(pos,self.all_sprites)#groups se sustituye por self.all_sprites
+			Tile((x * 64,y * 64), surf, self.all_sprites)
+		Player((100,200),self.all_sprites)#groups se sustituye por self.all_sprites
 
 
 	def run(self):
